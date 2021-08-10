@@ -12,6 +12,9 @@
 // Если числа попадают в диапазон от 1 до 10 — сделать запрос по URL https://picsum.photos/v2/list?page=1&limit=10, где GET-параметр page — это число из первого input, 
 // а GET-параметр limit — это введённое число второго input. 
 
+const numberField = document.createElement('div');
+
+
 const titleNumberPage = document.createElement('h1');
 const titleLimitPage = document.createElement('h1');
 
@@ -20,10 +23,15 @@ const limitPage = document.createElement('input');
 const btn = document.createElement('button');
 const field = document.createElement('div');
 
+document.body.append(numberField);
+
+
+numberField.append(titleNumberPage);
+numberField.append(numberPage);
+
 document.body.append(titleLimitPage);
-document.body.append(titleNumberPage);
-document.body.append(numberPage);
 document.body.append(limitPage);
+
 document.body.append(btn);
 document.body.append(field);
 
