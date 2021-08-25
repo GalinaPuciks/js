@@ -22,5 +22,6 @@ export function getMonth(n) {
 	if (n === 12) return 'декабрь';
 }
 
-alert(getMonth("ijkl"));
+alert(getMonth(3));
+
 
